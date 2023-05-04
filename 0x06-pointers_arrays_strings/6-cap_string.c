@@ -20,7 +20,7 @@ char *cap_string(char *s)
 		}
 		else
 			foundDelimit = 0;
-	s++
+		s++;
 	}
 	return (ptr);
 }
