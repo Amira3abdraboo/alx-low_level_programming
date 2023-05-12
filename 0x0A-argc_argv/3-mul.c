@@ -3,9 +3,9 @@
  *main - multiplies two numbers.
  *@argc: number of arguments
  *@argv: array of arguments
- *Return: 0 on Success
+ *Return: 0 on Success, 1 on fail
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int sum;
 
