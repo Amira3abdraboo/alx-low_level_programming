@@ -3,17 +3,19 @@
 /**
  *_memset - fills a memory with a constant byte
  *@s: pointer to put the constant
- *@b: constant
- *@n: max byte to use
- *Return: s
+ *@b: char
+ *@n: number of times to copy
+ *Return: pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *m = s;
+	unsigned int i;
 
-	while (n--)
-		*s++ = b;
-	return (m);
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
 }
 /**
  * *_calloc - function that allocates memory for an array.
